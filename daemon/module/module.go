@@ -309,7 +309,7 @@ func StartModule(name string) error {
 	}()
 
 	go func() {
-		time.Sleep(3 * time.Second)
+		time.Sleep(10 * time.Second)
 		timeout <- true
 	}()
 
